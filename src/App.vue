@@ -32,7 +32,7 @@ function receiving(data)
       <filteres @sendDataCharacter="receiving"/>
     </header>
     <main>
-      <div class="main__pagination pagination-block"></div>
+      <!-- <div class="main__pagination pagination-block"></div> -->
       <character v-for="el of characters" :key="el" :char_el="el"/>
     </main>
   </div>
@@ -51,7 +51,9 @@ header {
   display: block;
   margin: 0 auto 2rem;
 }
+
 main{
+width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
